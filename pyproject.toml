@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "django-auth-tacacs"
+version = "0.0.1"
+description = "Tacacs+ external authentication backend for Django - Nautbot - Netbox"
+authors = ["Maarten Wallraf <mwallraf@2nms.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "django_auth_tacacs"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1"
+tacacs_plus = "^2.6"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+autopep8 = "^2.0.2"
+pytest = "^7.2.1"
+mypy = "^1.0.1"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
